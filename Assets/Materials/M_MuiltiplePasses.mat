@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_gradient
-  m_Shader: {fileID: 4800000, guid: 689ebae6398581e41acd44dbf0e4e167, type: 3}
+  m_Name: M_MuiltiplePasses
+  m_Shader: {fileID: 4800000, guid: c3db3f096e434e543b51c3547bd44042, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -22,15 +22,15 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _OutlineWidth: 0
     m_Colors:
-    - _mycolor1: {r: 0.039215565, g: 0, b: 1, a: 1}
-    - _mycolor2: {r: 1, g: 0, b: 0.9411764, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _mycolor: {r: 0.12482201, g: 0.4811321, b: 0.36475652, a: 1}
+    - _mycolor1: {r: 1, g: 1, b: 1, a: 0}
+    - _mycolor2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

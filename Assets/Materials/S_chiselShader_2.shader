@@ -1,8 +1,7 @@
-Shader "Custom Shaders/S_chiselShader"
+    Shader "Custom Shaders/S_chiselShader"
 {
     Properties
     {
-        _mycolor("Sample Color", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -28,8 +27,6 @@ Shader "Custom Shaders/S_chiselShader"
                 float4 positionHCS : SV_POSITION;
             };
             
-            float4 _mycolor;
-
             Varyings vert(Attributes IN)
             {
                 Varyings OUT;
@@ -37,12 +34,13 @@ Shader "Custom Shaders/S_chiselShader"
                 return OUT;
             }
 
-            half4 frag(Varyings IN) : SV_Target
+            half4 frag() : SV_Target
             {
-                return _mycolor;
+                half4 customColor;
+                customColor = half4(0.5,0,0,1);
+                return customColor;
             }
             ENDHLSL
         }
     }
-    Fallback Off
 }
